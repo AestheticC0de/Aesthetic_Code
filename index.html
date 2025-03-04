@@ -13,6 +13,20 @@
             overflow-x: hidden;
         }
 
+        @media (max-width: 768px) {
+            html {
+                font-size: 10px;
+                /* Smaller font for tablets & small screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 8px;
+                /* Even smaller font for phones */
+            }
+        }
+
         .navbar {
             background-color: #1B1B1E;
             position: relative;
@@ -231,121 +245,136 @@
         }
 
         /* Contact Section */
-#contact {
-    background: #000; /* Black background */
-    padding: 80px 0;
-    color: #fff;
-}
+        #contact {
+            background: #000;
+            /* Black background */
+            padding: 80px 0;
+            color: #fff;
+        }
 
-/* Section Title */
-.section-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
+        /* Section Title */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
 
-/* Subtitle */
-.section-subtitle {
-    font-size: 1.2rem;
-    color: #aaa;
-    max-width: 700px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
-}
+        /* Subtitle */
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
 
-/* Contact Wrapper */
-.contact-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 20px;
-}
+        /* Contact Wrapper */
+        .contact-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin-top: 20px;
+        }
 
-/* Contact Info */
-.contact-info {
-    text-align: left;
-    max-width: 300px;
-}
+        /* Contact Info */
+        .contact-info {
+            text-align: left;
+            max-width: 300px;
+        }
 
-.contact-info h4 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #fff;
-}
+        .contact-info h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #fff;
+        }
 
-.contact-info p {
-    font-size: 1rem;
-    color: #ddd;
-    margin-bottom: 10px;
-}
+        .contact-info p {
+            font-size: 1rem;
+            color: #ddd;
+            margin-bottom: 10px;
+        }
 
-.contact-info i {
-    color: #00AEEF; /* Accent color */
-    margin-right: 8px;
-}
+        .contact-info i {
+            color: #00AEEF;
+            /* Accent color */
+            margin-right: 8px;
+        }
 
-/* Social Links Section */
-.social-links {
-    text-align: left;
-    max-width: 350px;
-}
+        /* Social Links Section */
+        .social-links {
+            text-align: left;
+            max-width: 350px;
+        }
 
-.social-links h4 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #fff;
-}
+        .social-links h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #fff;
+        }
 
-/* Social Buttons */
-.social-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+        /* Social Buttons */
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
 
-/* Social Buttons Styling */
-.social-btn {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fff;
-    padding: 12px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: transform 0.3s ease, background 0.3s ease;
-    width: 250px;
-}
+        /* Social Buttons Styling */
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.3s ease, background 0.3s ease;
+            width: 250px;
+        }
 
-.social-btn img {
-    width: 30px; /* Adjust logo size */
-    height: 30px;
-    transition: transform 0.3s ease-in-out;
-}
+        .social-btn img {
+            width: 30px;
+            /* Adjust logo size */
+            height: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-/* Individual Platform Styles */
-.linkedin { background: #0077b5; }
-.instagram { background: #e4405f; }
-.twitter { background: #1da1f2; }
-.facebook { background: #1877f2; }
-.github { background: #333; }
+        /* Individual Platform Styles */
+        .linkedin {
+            background: #0077b5;
+        }
 
-/* Hover Effects */
-.social-btn:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.15);
-}
+        .instagram {
+            background: #e4405f;
+        }
 
-.social-btn:hover img {
-    transform: scale(1.2) rotate(5deg);
-}
+        .twitter {
+            background: #1da1f2;
+        }
 
+        .facebook {
+            background: #1877f2;
+        }
 
+        .github {
+            background: #333;
+        }
+
+        /* Hover Effects */
+        .social-btn:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .social-btn:hover img {
+            transform: scale(1.2) rotate(5deg);
+        }
     </style>
 </head>
 
@@ -416,7 +445,7 @@
     </section>
 
 
-    <section id="about" class="section bg-dark text-light text-center">
+    <section id="about" class="section text-light text-center">
         <div class="container">
             <h2 class="section-title">About Us</h2>
             <p class="section-subtitle">
@@ -444,7 +473,8 @@
                             <i class="fas fa-eye"></i>
                         </div>
                         <h4>Our Vision</h4>
-                        <p>To be the global leader in business-solution-driven software that enhances the efficiency of future demand.</p>
+                        <p>To be the global leader in business-solution-driven software that enhances the efficiency of
+                            future demand.</p>
                     </div>
                 </div>
 
@@ -467,14 +497,15 @@
         <div class="container">
             <h2 class="section-title">Connect</h2>
             <p class="section-subtitle">Connect with us through social media or reach out directly.</p>
-    
+
             <div class="contact-wrapper">
                 <!-- Contact Info -->
                 <div class="contact-info">
                     <h4>Contact Information</h4>
-                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@aestheticcode.com">aestheticcode.official@gmail.com</a></p>
+                    <p><i class="fas fa-envelope"></i> Email: <a
+                            href="mailto:contact@aestheticcode.com">aestheticcode.official@gmail.com</a></p>
                 </div>
-    
+
                 <!-- Social Media Links -->
                 <div class="social-links">
                     <h4>Follow Us</h4>
@@ -486,8 +517,8 @@
                 </div>
             </div>
         </div>
-    </section>    
-    
+    </section>
+
 
     <footer class="text-center p-4" style="background-color: #1B1B1E;">
         <p>&copy; 2025 Aesthetic Code. All rights reserved.</p>
