@@ -1,0 +1,526 @@
+body {
+    font-family: 'Roboto';
+    background-color: black;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+.navbar {
+    font-family: 'Homenaje';
+    background-color: #1B1B1E;
+    position: relative;
+    z-index: 2;
+}
+
+.hero {
+    font-family: 'Homenaje';
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: black;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.binary-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.binary-animation span {
+    position: absolute;
+    color: #151515;
+    font-size: 1.2rem;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-10vh);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
+
+.hero .container {
+    position: relative;
+    z-index: 3;
+}
+
+.hero h1 {
+    display: inline-block;
+    font-size: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white;
+    animation: typing 3s steps(30, end), blink 0.8s infinite;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: white;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.btn-custom {
+    background-color: #6c63ff;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #5548e1;
+}
+
+.service-card {
+    color: black;
+    height: 300px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin: 20px;
+}
+
+.service-card p {
+    margin-top: 40px;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+#about {
+    background: #1B1B1E;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.section-title {
+    font-family: 'Homenaje';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #BAA5FF;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #bbb;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.icon-wrapper {
+    font-size: 2.5rem;
+    color: #00AEEF;
+    margin-bottom: 15px;
+}
+
+.about-card h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 1rem;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+#contact {
+    padding: 80px 0;
+    color: #fff;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 300px;
+}
+
+.contact-info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    color: #00AEEF;
+    margin-right: 8px;
+}
+
+.social-links {
+    text-align: left;
+    max-width: 350px;
+}
+
+.social-links h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 250px;
+}
+
+.social-btn img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+.instagram {
+    background: #e4405f;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.github {
+    background: #333;
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.social-btn:hover img {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.scroll-down-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    color: white;
+    margin-top: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    animation: glowFade 2s infinite ease-in-out;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .scroll-down-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(3px);
+  }
+  
+  .down-icon {
+    width: 18px;
+    height: 18px;
+    stroke: white;
+  }
+  
+  @keyframes glowFade {
+    0% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    }
+  }  
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .product-feature-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    gap: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .product-feature-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  .product-label {
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: inline-block;
+  }
+  
+  .product-content h3 {
+    font-size: 1.75rem;
+    color: #ffffff;
+  }
+  
+  .product-content p,
+  .product-content li {
+    font-size: 1rem;
+    color: #cccccc;
+  }
+  
+  .btn-custom {
+    background-color: #6c63ff;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #5548e1;
+  }
+
+  .hero-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: normal;
+  }
+  
+  @media (max-width: 800px) {
+    .hero-heading {
+      font-size: 0.5rem;
+      line-height: 1.5;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-heading {
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+  }
+
+  .image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .image-modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    animation: zoomIn 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0 }
+    to { transform: scale(1); opacity: 1 }
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close-modal:hover {
+    color: #aaa;
+  }
+
+  .gradient-spotlight {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 800px;
+    background: radial-gradient(
+      circle at 30% 30%,
+      rgba(120, 80, 255, 0.25),
+      rgba(255, 80, 200, 0.15),
+      transparent 70%
+    );
+    animation: moveGradient 10s ease-in-out infinite alternate;
+    z-index: 0;
+    filter: blur(80px);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  @keyframes moveGradient {
+    0% {
+      transform: translateX(-50%) translateY(0) scale(1);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-30px) scale(1.05);
+    }
+  }
+  
+  #about .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .contact-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  
