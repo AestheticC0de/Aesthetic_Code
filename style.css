@@ -522,5 +522,31 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
   }
+
+  /* Fix responsive text scaling */
+h2.section-title,
+.section-subtitle {
+  word-wrap: break-word;
+}
+
+/* Ensure no horizontal overflow anywhere */
+body, html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Make images never overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive contact cards */
+@media (max-width: 576px) {
+  .contact-card {
+    text-align: center;
+  }
+}
+
   
   
